@@ -2,4 +2,4 @@
 [MICCAI'2025] EndoDAV: Depth Any Video in Endoscopy with Spatiotemporal Accuracy
 
 ## TODO
-- [ ] Code will be updated by 8.20
+- [ ] Code is coming soon..
