@@ -1,0 +1,8 @@
+test/dataset8/keyframe0
+test/dataset8/keyframe1
+test/dataset8/keyframe2
+test/dataset8/keyframe3
+test/dataset9/keyframe0
+test/dataset9/keyframe1
+test/dataset9/keyframe2
+test/dataset9/keyframe3

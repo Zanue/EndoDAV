@@ -1,0 +1,42 @@
+Target:
+SLAM by dense depth predicting and matching.
+Matching helps align the monocular depth maps, then pose is not needed.
+
+Notes:
+1. data format: image: [B, T, C, H, W]
+2. DVLab4, logs/20250219/nores-randomtrain, endodac baseline
+
+Finished:
+1. Adapt video depth anything model;
+
+TODO List:
+1. metric: depth, depth temporal, pose
+2. extention: SLAM
+3. try different hyperparameters
+4. test on the same sequence but different keyframes, or different sequences
+
+1. `residual_block_indexes`, what is this?
+2. posenet can also learn from the image squence;
+
+
+EXP Log
+2025/2/20
+1. with residual: endodac better, endodav fail
+
+2025/2/21
+1. larger input image size perform more stable
+2. does poses prediction have problem?
+3. skip select training frame?
+
+2025/2/22
+1. video depth anything mean: 6 ~ 8 (disparity)
+2. scared mean 60 ~ 80 (depth)
+4. DVLab3 logs/20250222/scales4-d1000-old is best
+
+2025/2/23
+1. logs/20250223/scales4-d1000/endodav/models/weights_6/eval/hamlyn_video hamlyn test
+
+2025/2/25
+1. logs/20250222/scales4-d1000-old weights_6 scared test
+2. logs/20250223/scales4-d1000/endodav/models/weights_6/ test
+2. logs/20250224/scales4-lorassb/endodav/models/weights_2/ test
